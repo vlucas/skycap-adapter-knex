@@ -1,0 +1,19 @@
+{
+  "name": "skycap-adapter-knex",
+  "version": "0.0.1",
+  "description": "Knex.js database adapter for Skycap. Supports all database types Knex.js does.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Vance Lucas <vance@vancelucas.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-session-knex": "^1.4.0",
+    "knex": "^0.12.9"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0"
+  }
+}
