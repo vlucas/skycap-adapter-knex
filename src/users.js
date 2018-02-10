@@ -1,6 +1,5 @@
 const { getConnection } = require('./config');
 
-const knex = getConnection();
 const TABLE_USERS = 'users';
 
 /**
@@ -11,7 +10,7 @@ const TABLE_USERS = 'users';
  * @return {Promise}
  */
 function findByEmail(email) {
-  return knex(TABLE_USERS)
+  return getConnection()(TABLE_USERS)
     .first()
     .where('email', email);
 }
@@ -42,7 +41,7 @@ function register(email, hashedPassword, profileData = {}) {
         dt_updated: NOW
       };
 
-      return knex(TABLE_USERS)
+      return getConnection()(TABLE_USERS)
         .insert(storedUser);
     });
 }
