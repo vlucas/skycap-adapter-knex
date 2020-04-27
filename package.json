@@ -10,8 +10,8 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "connect-session-knex": "^1.4.0",
-    "knex": "^0.12.9"
+    "connect-session-knex": "^1.6.0",
+    "knex": "^0.21.0"
   },
   "devDependencies": {
     "eslint": "^4.16.0"
